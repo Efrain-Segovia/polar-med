@@ -8,7 +8,7 @@ export default function FloatingWhatsApp({ data, theme }) {
       style={{ backgroundColor: theme.colors.secondary }}
       aria-label={data.ctas.whatsapp}
     >
-      WA
+      {data.ui.whatsappShort}
     </a>
   );
 }

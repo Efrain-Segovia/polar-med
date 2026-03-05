@@ -5,9 +5,22 @@ export const siteData = {
   brand: {
     name: 'Polar Med',
     tagline: 'Salud integral',
+    logo: {
+      svg: '/images/logo.svg',
+      png: '/images/logo.png',
+      alt: 'Logo de Polar Med',
+    },
     heroTrustText:
       'Atención profesional y cercana para acompañarte en cada etapa de tu bienestar y el de tu familia.',
     copyright: `© ${new Date().getFullYear()} Polar Med. Todos los derechos reservados.`,
+  },
+  ui: {
+    menuOpen: 'Menú',
+    menuClose: 'Cerrar',
+    bullet: '•',
+    whatsappShort: 'WA',
+    facebookPrefix: 'Facebook',
+    instagramPrefix: 'Instagram',
   },
   nav: {
     links: [
@@ -189,6 +202,11 @@ export const siteData = {
         message: 'Cuéntanos brevemente tu necesidad',
       },
       submit: 'Enviar por WhatsApp',
+      whatsappTemplate: 'Hola, quiero agendar una cita en Polar Med.',
+      whatsappName: 'Nombre',
+      whatsappPhone: 'Tel',
+      whatsappService: 'Servicio',
+      whatsappMessage: 'Mensaje',
     },
   },
   testimonials: {
@@ -227,6 +245,9 @@ export const siteData = {
         answer: 'Nos encontramos en Calle 42 x 29 y 31, Tzucacab.',
       },
     ],
+  },
+  gallery: {
+    title: 'Galería',
   },
   footer: {
     privacyNotice: 'Aviso de privacidad (placeholder)',

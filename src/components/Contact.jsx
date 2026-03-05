@@ -17,11 +17,11 @@ export default function Contact({ data, theme }) {
     event.preventDefault();
 
     const message = [
-      'Hola, quiero agendar una cita en Polar Med.',
-      `Nombre: ${form.name || ''}`,
-      `Tel: ${form.phone || ''}`,
-      `Servicio: ${form.service || ''}`,
-      `Mensaje: ${form.message || ''}`,
+      data.contactSection.form.whatsappTemplate,
+      `${data.contactSection.form.whatsappName}: ${form.name || ''}`,
+      `${data.contactSection.form.whatsappPhone}: ${form.phone || ''}`,
+      `${data.contactSection.form.whatsappService}: ${form.service || ''}`,
+      `${data.contactSection.form.whatsappMessage}: ${form.message || ''}`,
     ].join('\n');
 
     const url = `${data.contact.whatsappHref}?text=${encodeURIComponent(message)}`;

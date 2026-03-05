@@ -45,9 +45,7 @@ export default function ServiceDetails({ data, theme }) {
                 <ul className="mt-4 space-y-2">
                   {category.items.map((item) => (
                     <li key={item} className="flex gap-2" style={{ color: theme.colors.text }}>
-                      <span aria-hidden="true" style={{ color: theme.colors.secondary }}>
-                        •
-                      </span>
+                      <span aria-hidden="true" style={{ color: theme.colors.secondary }}>{data.ui.bullet}</span>
                       <span>{item}</span>
                     </li>
                   ))}

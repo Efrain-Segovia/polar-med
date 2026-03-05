@@ -1,11 +1,16 @@
+import BrandLogo from './BrandLogo';
+
 export default function Footer({ data, theme }) {
   return (
     <footer className="border-t bg-white" style={{ borderColor: theme.colors.border }}>
       <div className="section-shell grid gap-4 py-8 sm:grid-cols-2">
         <div>
-          <p className="text-lg font-display font-semibold" style={{ color: theme.colors.heading }}>
-            {data.brand.name}
-          </p>
+          <div className="inline-flex items-center gap-2">
+            <BrandLogo data={data} className="h-10 w-auto" />
+            <p className="text-lg font-display font-semibold" style={{ color: theme.colors.heading }}>
+              {data.brand.name}
+            </p>
+          </div>
           <p className="text-sm" style={{ color: theme.colors.text }}>
             {data.brand.tagline}
           </p>
@@ -25,7 +30,7 @@ export default function Footer({ data, theme }) {
             className="focus-ring block text-sm"
             style={{ color: theme.colors.text }}
           >
-            Facebook: {data.contact.facebookLabel}
+            {data.ui.facebookPrefix}: {data.contact.facebookLabel}
           </a>
           <a
             href={data.contact.instagramHref}
@@ -34,7 +39,7 @@ export default function Footer({ data, theme }) {
             className="focus-ring mt-1 block text-sm"
             style={{ color: theme.colors.text }}
           >
-            Instagram: {data.contact.instagramLabel}
+            {data.ui.instagramPrefix}: {data.contact.instagramLabel}
           </a>
           <p className="mt-3 text-sm" style={{ color: theme.colors.text }}>
             {data.footer.privacyNotice}

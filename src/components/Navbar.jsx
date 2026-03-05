@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import BrandLogo from './BrandLogo';
 
 export default function Navbar({ data, theme }) {
   const [open, setOpen] = useState(false);
@@ -9,8 +10,9 @@ export default function Navbar({ data, theme }) {
       style={{ borderColor: theme.colors.border }}
     >
       <nav className="section-shell flex h-16 items-center justify-between gap-4" aria-label="Navegación principal">
-        <a href="#inicio" className="focus-ring text-lg font-display font-semibold" style={{ color: theme.colors.heading }}>
-          {data.brand.name}
+        <a href="#inicio" className="focus-ring inline-flex items-center gap-2 rounded-md" style={{ color: theme.colors.heading }}>
+          <BrandLogo data={data} className="h-10 w-auto" />
+          <span className="text-lg font-display font-semibold">{data.brand.name}</span>
         </a>
 
         <button
@@ -21,7 +23,7 @@ export default function Navbar({ data, theme }) {
           aria-expanded={open}
           aria-controls="mobile-menu"
         >
-          {open ? 'Cerrar' : 'Menú'}
+          {open ? data.ui.menuClose : data.ui.menuOpen}
         </button>
 
         <div className="hidden items-center gap-6 md:flex">
