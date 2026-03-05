@@ -45,6 +45,9 @@ export default function Footer({ data, theme }) {
             {data.footer.privacyNotice}
           </p>
           <p className="mt-1 text-sm" style={{ color: theme.colors.text }}>
+            {data.footer.credit}
+          </p>
+          <p className="mt-1 text-sm" style={{ color: theme.colors.text }}>
             {data.brand.copyright}
           </p>
         </div>

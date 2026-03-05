@@ -1,3 +1,5 @@
+import { imageData } from './imageData';
+
 const whatsappDigits = '529971220256';
 const phoneDigits = '9971220256';
 
@@ -6,8 +8,8 @@ export const siteData = {
     name: 'Polar Med',
     tagline: 'Salud integral',
     logo: {
-      svg: '/images/logo.svg',
-      png: '/images/logo.png',
+      svg: imageData['logo-svg'],
+      png: imageData['logo-png'],
       alt: 'Logo de Polar Med',
     },
     heroTrustText:
@@ -48,11 +50,11 @@ export const siteData = {
     whatsappPrefill:
       'Hola, quiero agendar una cita en Polar Med.\nNombre: \nTel: \nServicio: \nMensaje: ',
     facebookLabel: 'Polar Med',
-    facebookHref: 'https://www.facebook.com/Polar%20Med',
+    facebookHref: 'https://www.facebook.com/share/1hhTgtE6m8/?mibextid=wwXIfr',
     instagramLabel: 'polarmed24',
-    instagramHref: 'https://www.instagram.com/polarmed24/',
+    instagramHref: 'https://www.instagram.com/polarmed24?igsh=OTVkMDc4ZGF6dmN6',
     mapsQueryHref:
-      'https://www.google.com/maps/search/?api=1&query=Calle+42+x+29+y+31%2C+Tzucacab',
+      'https://maps.app.goo.gl/hEUhMAh15ihF3Din7?g_st=ic',
     mapsEmbedUrl:
       'https://www.google.com/maps?q=Calle+42+x+29+y+31,+Tzucacab&output=embed',
   },
@@ -179,12 +181,12 @@ export const siteData = {
       {
         type: 'Facebook',
         value: 'Polar Med',
-        href: 'https://www.facebook.com/Polar%20Med',
+        href: 'https://www.facebook.com/share/1hhTgtE6m8/?mibextid=wwXIfr',
       },
       {
         type: 'Instagram',
         value: 'polarmed24',
-        href: 'https://www.instagram.com/polarmed24/',
+        href: 'https://www.instagram.com/polarmed24?igsh=OTVkMDc4ZGF6dmN6',
       },
     ],
     form: {
@@ -251,19 +253,19 @@ export const siteData = {
   },
   footer: {
     privacyNotice: 'Aviso de privacidad (placeholder)',
+    credit: 'Página web diseñada por Chini Segovia',
   },
   images: {
-    hero: '/images/hero.jpg',
+    hero: imageData.hero,
     gallery: [
-      '/images/gallery-1.jpg',
-      '/images/gallery-2.jpg',
-      '/images/gallery-3.jpg',
-      '/images/gallery-4.jpg',
-      '/images/gallery-5.jpg',
-      '/images/gallery-6.jpg',
-      '/images/gallery-7.jpg',
-      '/images/gallery-8.jpg',
-      '/images/gallery-9.jpg',
+      imageData['gallery-1'],
+      imageData['gallery-2'],
+      imageData['gallery-3'],
+      imageData['gallery-4'],
+      imageData['gallery-5'],
+      imageData['gallery-6'],
+      imageData['gallery-7'],
+      imageData['gallery-8'],
     ],
   },
 };
